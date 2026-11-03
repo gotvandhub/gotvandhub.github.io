@@ -1,165 +1,394 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Yousef Emami - Researcher in UAV communications, multi-agent AI, and federated learning security.">
-  <title>Yousef Emami | Researcher</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<title>Yousef Emami | Academic Researcher</title>
 
-    body {
-      font-family: Georgia, serif;
-      max-width: 850px;
-      margin: 0 auto;
-      padding: 0 24px;
-      line-height: 1.7;
-      color: #263238;
-      background: #ffffff;
-    }
+<meta name="description" content="Yousef Emami - Researcher in wireless communications, UAV communications, machine learning, and game theory.">
 
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 24px;
-      padding: 20px 0;
-      margin-bottom: 55px;
-      border-bottom: 1px solid #e5e7eb;
-    }
+<style>
+:root {
+  --navy: #14243e;
+  --blue: #2878c7;
+  --text: #263449;
+  --muted: #64748b;
+  --background: #f5f7fb;
+  --white: #ffffff;
+}
 
-    nav a {
-      color: #334155;
-      text-decoration: none;
-      font-family: Arial, sans-serif;
-      font-size: 15px;
-      font-weight: 600;
-    }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    nav a:hover {
-      color: #0877c9;
-    }
+html {
+  scroll-behavior: smooth;
+}
 
-    header {
-      margin-bottom: 45px;
-    }
+body {
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.8;
+}
 
-    h1 {
-      font-size: 38px;
-      margin-bottom: 5px;
-      color: #172b4d;
-    }
+/* NAVIGATION */
 
-    .sub {
-      color: #64748b;
-      margin-top: 0;
-      font-size: 17px;
-    }
+nav {
+  background: var(--navy);
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
 
-    h2 {
-      color: #172b4d;
-      font-size: 23px;
-      margin-top: 35px;
-      border-bottom: 1px solid #e5e7eb;
-      padding-bottom: 8px;
-    }
+.logo {
+  color: white;
+  font-size: 19px;
+  font-weight: 750;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
 
-    a {
-      color: #0877c9;
-    }
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
 
-    footer {
-      margin-top: 55px;
-      padding: 20px 0;
-      border-top: 1px solid #e5e7eb;
-      color: #777;
-      font-size: 13px;
-    }
+.nav-links a {
+  color: #dce7f5;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: color .2s;
+}
 
-    @media (max-width: 600px) {
-      body {
-        padding: 0 18px;
-      }
+.nav-links a:hover {
+  color: #70b8ff;
+}
 
-      nav {
-        gap: 15px;
-        margin-bottom: 35px;
-      }
+/* HERO SECTION */
 
-      h1 {
-        font-size: 30px;
-      }
-    }
-  </style>
+.hero {
+  background: linear-gradient(135deg, #14243e, #213d60);
+  color: white;
+  padding: 85px 8%;
+}
+
+.hero-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 65px;
+}
+
+.profile-image {
+  width: 245px;
+  height: 285px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 18px;
+  border: 5px solid rgba(255,255,255,.15);
+  box-shadow: 0 15px 40px rgba(0,0,0,.25);
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: clamp(34px, 5vw, 49px);
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.hero-content .position {
+  color: #a9c9ee;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.hero-content .intro {
+  color: #e0e9f5;
+  font-size: 16px;
+  max-width: 650px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 13px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 11px 23px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: 650;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background: #3b91e6;
+  color: white;
+}
+
+.btn-outline {
+  border: 1px solid #a9c9ee;
+  color: white;
+}
+
+/* MAIN CONTENT */
+
+.container {
+  max-width: 1000px;
+  margin: 65px auto;
+  padding: 0 25px;
+}
+
+.section {
+  background: white;
+  padding: 40px;
+  margin-bottom: 30px;
+  border-radius: 14px;
+  box-shadow: 0 5px 25px rgba(20,36,62,.045);
+}
+
+.section h2 {
+  color: var(--navy);
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.section h2::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 3px;
+  background: var(--blue);
+  margin-top: 10px;
+}
+
+.section p {
+  margin-bottom: 16px;
+  color: #46556a;
+  font-size: 15px;
+  text-align: justify;
+}
+
+/* RESEARCH INTERESTS */
+
+.interests {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.interests span {
+  background: #edf4fc;
+  color: #245b91;
+  border: 1px solid #d9e8f8;
+  padding: 8px 15px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* FOOTER */
+
+footer {
+  background: var(--navy);
+  color: #d4dfed;
+  text-align: center;
+  padding: 27px 15px;
+  font-size: 13px;
+}
+
+footer a {
+  color: #8fc6ff;
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+  nav {
+    padding: 18px 5%;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .hero {
+    padding: 55px 7%;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .profile-image {
+    width: 190px;
+    height: 220px;
+  }
+
+  .section {
+    padding: 25px 22px;
+  }
+
+  .container {
+    margin: 35px auto;
+  }
+}
+</style>
 </head>
 
 <body>
 
-  <nav aria-label="Main navigation">
+<!-- NAVIGATION -->
+
+<nav>
+  <a class="logo" href="/">YOUSEF EMAMI</a>
+
+  <div class="nav-links">
     <a href="/">Home</a>
     <a href="/about/">About</a>
     <a href="/cv/">CV</a>
     <a href="/publications/">Publications</a>
     <a href="/portfolio/">Portfolio</a>
-  </nav>
+  </div>
+</nav>
 
-  <header>
-    <h1>Yousef Emami</h1>
-    <p class="sub">
-      Researcher | CISTER Research Centre, ISEP, University of Porto
-    </p>
-  </header>
+<!-- PROFILE / HERO -->
 
-  <main>
-    <section>
-      <h2>About</h2>
-      <p>
-        I work on UAV communications, multi-agent deep reinforcement
-        learning, LLM-based agentic AI, and federated learning security.
-      </p>
-      <p>
-        <a href="/about/">Read more about me →</a>
-      </p>
-    </section>
+<header class="hero">
+  <div class="hero-container">
 
-    <section>
-      <h2>Publications</h2>
-      <p>
-        Explore my research publications and academic contributions.
+    <img
+      src="/inprofile.png"
+      alt="Yousef Emami"
+      class="profile-image"
+    >
+
+    <div class="hero-content">
+      <h1>Yousef Emami</h1>
+
+      <p class="position">
+        Researcher | CISTER Research Centre<br>
+        ISEP, University of Porto
       </p>
-      <p>
-        <a href="/publications/">View publications →</a>
+
+      <p class="intro">
+        Exploring intelligent wireless communication,
+        UAV networks, machine learning, and game theory
+        for next-generation communication systems.
       </p>
-      <p>
-        <a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer">
-          Google Scholar
+
+      <div class="hero-buttons">
+        <a href="/cv/" class="btn btn-primary">View My CV</a>
+        <a href="/publications/" class="btn btn-outline">
+          Publications
         </a>
-        (Replace with your personal profile URL.)
-      </p>
-    </section>
+      </div>
+    </div>
 
-    <section>
-      <h2>Curriculum Vitae</h2>
-      <p>
-        <a href="/cv/">View my CV →</a>
-      </p>
-    </section>
+  </div>
+</header>
 
-    <section>
-      <h2>Contact</h2>
-      <p>
-        Email:
-        <a href="mailto:you@example.com">Replace with your email</a>
-      </p>
-    </section>
-  </main>
+<!-- MAIN CONTENT -->
 
-  <footer>
-    © 2026 Yousef Emami. All rights reserved.
-  </footer>
+<main class="container">
+
+  <section class="section" id="about">
+
+    <h2>About Me</h2>
+
+    <p>
+      I am a researcher working at the intersection of
+      <strong>Wireless Communications, UAV Communications,
+      Machine Learning, and Game Theory</strong>. My research
+      interests focus on applying intelligent learning and
+      game-theoretic approaches to address challenging problems
+      in next-generation wireless communication networks.
+    </p>
+
+    <p>
+      I am particularly interested in leveraging machine learning,
+      reinforcement learning, large language models and game
+      theory to develop intelligent, adaptive, and efficient
+      communication frameworks for UAV-assisted networks.
+      My broader research vision is to explore security challenges
+      in UAV communications, investigate emerging vehicular
+      networks, and study the integration of 6G technologies
+      with UAV-assisted communication systems.
+    </p>
+
+    <p>
+      I aim to contribute to the development of secure, reliable,
+      and intelligent wireless networks by exploring the interplay
+      between communication technologies, autonomous systems,
+      and intelligent decision-making. I am also interested in
+      emerging research directions that connect UAV communications,
+      vehicular networks, and 6G-enabled intelligent networking.
+    </p>
+
+  </section>
+
+  <section class="section">
+
+    <h2>Research Interests</h2>
+
+    <div class="interests">
+      <span>Wireless Communications</span>
+      <span>UAV Communications</span>
+      <span>Machine Learning</span>
+      <span>Deep Reinforcement Learning</span>
+      <span>Large Language Models</span>
+      <span>Game Theory</span>
+      <span>Vehicular Networks</span>
+      <span>6G Networks</span>
+  </div>
+
+  </section>
+
+  <section class="section">
+
+    <h2>Academic Profile</h2>
+
+    <p>
+      Explore my academic background, research publications,
+      and professional activities.
+    </p>
+
+    <p>
+      <a href="/cv/">Curriculum Vitae →</a>
+      &nbsp; | &nbsp;
+      <a href="/publications/">Research Publications →</a>
+    </p>
+
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+  <p>© 2026 Yousef Emami. All rights reserved.</p>
+  <p>CISTER Research Centre | ISEP | University of Porto</p>
+</footer>
 
 </body>
 </html>
